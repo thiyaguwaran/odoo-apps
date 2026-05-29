@@ -14,7 +14,6 @@ Features:
 """,
     'category': 'Purchases',
     'author': 'Thiyagesh S',
-    'website': 'https://github.com/thiyaguwaran/odoo-apps',
     'depends': ['purchase'],
     'data': [
         'security/ir.model.access.csv',
