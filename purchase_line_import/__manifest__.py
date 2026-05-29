@@ -24,7 +24,6 @@ Features:
     'license': 'OPL-1',
     'price': 4.99,
     'currency': 'USD',
-    'images': ['static/description/banner.png'],
     'installable': True,
     'application': False,
     'auto_install': False,
