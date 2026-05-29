@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_purchase_order_line_import_wizard_form" model="ir.ui.view">
+        <field name="name">purchase.order.line.import.wizard.form</field>
+        <field name="model">purchase.order.line.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Purchase Order Lines">
+                <div class="alert alert-info" role="alert">
+                    <p class="mb-0">
+                        <strong>Excel File Requirements:</strong><br/>
+                        - The sheet must contain a column for <strong>Part Number</strong> (Internal Reference).<br/>
+                        - Optional columns: <strong>Quantity</strong>, <strong>Unit Price</strong>, <strong>Description</strong>, <strong>UoM</strong>, <strong>Analytic Account</strong>, and <strong>Taxes</strong> (comma-separated).<br/>
+                        - The first row is treated as the column headers.
+                    </p>
+                </div>
+                <group>
+                    <field name="file_name" invisible="True"/>
+                    <field name="data_file" filename="file_name" string="Excel File (.xlsx)"/>
+                </group>
+                <footer>
+                    <button name="action_import" string="Import" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_purchase_order_line_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import Purchase Order Lines</field>
+        <field name="res_model">purchase.order.line.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

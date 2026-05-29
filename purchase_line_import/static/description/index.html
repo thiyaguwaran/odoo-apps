@@ -1,0 +1,155 @@
+<section class="oe_container" style="font-family: 'Montserrat', sans-serif;">
+    <div class="oe_row oe_spaced">
+        <div class="col-12 text-center" style="margin-bottom: 2rem;">
+            <h2 class="oe_slogan" style="color: #714B67; font-size: 36px; font-weight: 700; margin-top: 15px; margin-bottom: 10px;">
+                Purchase Line Excel Import
+            </h2>
+            <h3 class="oe_slogan" style="color: #6C757D; font-size: 18px; font-weight: 400; margin-bottom: 30px;">
+                Import your purchase order lines directly from Excel (.xlsx) files with automatic onchange defaults, taxes, and analytic distribution mapping.
+            </h3>
+        </div>
+    </div>
+
+    <!-- Highlights / Features -->
+    <div class="oe_row oe_spaced" style="padding: 10px 0;">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 border-0" style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border-radius: 12px; padding: 25px; background: #fff;">
+                    <div style="background-color: rgba(113, 75, 103, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fa fa-file-excel-o" style="font-size: 28px; color: #714B67;"></i>
+                    </div>
+                    <h4 style="font-size: 18px; font-weight: 600; color: #333333; margin-bottom: 10px;">XLSX Format Support</h4>
+                    <p style="font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 0;">
+                        Seamlessly import large volume purchase order lines directly using modern Excel (.xlsx) workbooks.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 border-0" style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border-radius: 12px; padding: 25px; background: #fff;">
+                    <div style="background-color: rgba(40, 167, 69, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fa fa-magic" style="font-size: 28px; color: #28a745;"></i>
+                    </div>
+                    <h4 style="font-size: 18px; font-weight: 600; color: #333333; margin-bottom: 10px;">Smart Defaults</h4>
+                    <p style="font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 0;">
+                        Only Part Number is mandatory! The module automatically resolves product templates, default supplier pricelist prices, UoMs, and expected arrival dates.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 border-0" style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border-radius: 12px; padding: 25px; background: #fff;">
+                    <div style="background-color: rgba(23, 162, 184, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fa fa-pie-chart" style="font-size: 28px; color: #17a2b8;"></i>
+                    </div>
+                    <h4 style="font-size: 18px; font-weight: 600; color: #333333; margin-bottom: 10px;">Analytic & Taxes Mapping</h4>
+                    <p style="font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 0;">
+                        Map taxes by name and distribute costs instantly to Odoo 18 analytic accounts defined directly in your Excel columns.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="oe_row oe_spaced" style="background-color: #f9f9fc; border-radius: 12px; padding: 40px; margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-12">
+            <h3 style="color: #714B67; font-size: 24px; font-weight: 700; margin-bottom: 25px;" class="text-center">
+                How It Works - 3 Quick Steps
+            </h3>
+            <div class="row align-items-center">
+                <div class="col-md-6" style="font-size: 15px; color: #555555; line-height: 1.8;">
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <span style="background-color: #714B67; color: white; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-weight: bold; flex-shrink: 0;">1</span>
+                            <div>
+                                <strong>Create Excel Workbook:</strong> Ensure your first row has columns like "Part Number" (matching product code/barcode). Add columns for Qty, Price, Description, UoM, Analytic Account, or Taxes as required.
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span style="background-color: #714B67; color: white; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-weight: bold; flex-shrink: 0;">2</span>
+                            <div>
+                                <strong>Click Import Lines:</strong> Open any Purchase Order or Request for Quotation (in draft/sent state) and click the new <strong>"Import Lines"</strong> primary button located in the header.
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span style="background-color: #714B67; color: white; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-weight: bold; flex-shrink: 0;">3</span>
+                            <div>
+                                <strong>Validate and Confirm:</strong> Upload your file in the wizard pop-up and click "Import". The module performs dry-run validations on every row. If successful, your lines are built in bulk instantly.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid img-responsive" src="icon.png" style="max-height: 200px; opacity: 0.95;" alt="Import Wizard Interface">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Excel Specifications -->
+    <div class="oe_row oe_spaced" style="padding: 20px 0;">
+        <div class="col-12">
+            <h3 style="color: #333333; font-size: 22px; font-weight: 700; margin-bottom: 20px;">
+                Excel Template File Formats & Mapping
+            </h3>
+            <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 25px;">
+                The importer supports smart alias matching for your Excel headers. You don't have to follow strict system technical names!
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" style="border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr style="background-color: #714B67; color: white;">
+                            <th style="padding: 12px; font-weight: 600;">Data Target Field</th>
+                            <th style="padding: 12px; font-weight: 600;">Allowed Column Headers (Case-insensitive)</th>
+                            <th style="padding: 12px; font-weight: 600;">Requirement</th>
+                            <th style="padding: 12px; font-weight: 600;">Fallback Behavior</th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-size: 14px; color: #444;">
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Part Number</td>
+                            <td style="padding: 12px;">part number, part_number, partno, part no, internal reference, default_code, product</td>
+                            <td style="padding: 12px; color: #dc3545; font-weight: 500;">Mandatory</td>
+                            <td style="padding: 12px;">Searches by Internal Reference or Barcode. Empty rows are skipped.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Quantity</td>
+                            <td style="padding: 12px;">quantity, qty, product_qty, count</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Defaults to 1.0 (or minimum seller pricelist quantity).</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Unit Price</td>
+                            <td style="padding: 12px;">unit price, price_unit, price, rate</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Automatically calculates standard cost or supplier pricelist value.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Description</td>
+                            <td style="padding: 12px;">description, name, product description</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Pulls purchase description from product database automatically.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Unit of Measure</td>
+                            <td style="padding: 12px;">uom, unit of measure, product_uom</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Defaults to Product Purchase UoM.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Analytic Account</td>
+                            <td style="padding: 12px;">analytic account, analytic_account, analytic, analytic account code</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Sets a 100% analytic distribution for the matching account name/code.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold;">Taxes</td>
+                            <td style="padding: 12px;">taxes, tax, product_taxes, taxes_id</td>
+                            <td style="padding: 12px; color: #28a745;">Optional</td>
+                            <td style="padding: 12px;">Matches purchase taxes by name (supports comma-separated multiple taxes).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
